@@ -1,0 +1,24 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  labels:
+    app: demototalplay
+  name: app-totalplay
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: demototalplay
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+      labels:
+        app: demototalplay
+    spec:
+      containers:
+      - image: us-central1-docker.pkg.dev/demototalplay/arti-demo-totalplay/totalplay-cont:latest
+        name: app-totalplay
+        resources: {}
+status: {}

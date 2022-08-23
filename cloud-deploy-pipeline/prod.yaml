@@ -1,0 +1,10 @@
+apiVersion: deploy.cloud.google.com/v1beta1
+kind: Target
+metadata:
+  name: preview
+  annotations: {}
+  labels: {}
+description: Target for preview environment
+requireApproval: true
+gke:
+  cluster: projects/demototalplay/locations/us-central1-a/clusters/prod
