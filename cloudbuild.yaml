@@ -1,5 +1,5 @@
 steps:
 - name: 'gcr.io/cloud-builders/docker'
-  args: [ 'build', '-t', 'us-central1-docker.pkg.dev/lvp-lab-cicd-artifact-images/artifacts-cicd-test/democicd-cont', '.' ]
+  args: [ 'build', '-t', 'us-central1-docker.pkg.dev/lvp-lab-cicd-central/artifacts-cicd-test/democicd-cont', '.' ]
 images:  
-- 'us-central1-docker.pkg.dev/lvp-lab-cicd-artifact-images/artifacts-cicd-test/democicd-cont:latest'
+- 'us-central1-docker.pkg.dev/lvp-lab-cicd-central/artifacts-cicd-test/democicd-cont:latest'
