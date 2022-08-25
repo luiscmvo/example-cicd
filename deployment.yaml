@@ -18,7 +18,7 @@ spec:
         app: demototalplay
     spec:
       containers:
-      - image: us-central1-docker.pkg.dev/demototalplay/arti-demo-totalplay/totalplay-cont:latest
+      - image: us-central1-docker.pkg.dev/lvp-lab-cicd-artifact-images/artifacts-cicd-test/democicd-cont:latest
         name: app-totalplay
         resources: {}
 status: {}
