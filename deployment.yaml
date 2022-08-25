@@ -3,22 +3,22 @@ kind: Deployment
 metadata:
   creationTimestamp: null
   labels:
-    app: demototalplay
+    app: demoliverpool
   name: app-totalplay
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: demototalplay
+      app: demoliverpool
   strategy: {}
   template:
     metadata:
       creationTimestamp: null
       labels:
-        app: demototalplay
+        app: demoliverpool
     spec:
       containers:
-      - image: us-central1-docker.pkg.dev/lvp-lab-cicd-artifact-images/artifacts-cicd-test/democicd-cont:latest
+      - image: us-central1-docker.pkg.dev/lvp-lab-cicd-central/artifacts-cicd-test/democicd-cont
         name: app-totalplay
         resources: {}
 status: {}
