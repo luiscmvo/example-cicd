@@ -4,7 +4,7 @@ metadata:
   name: cv-gcp-
 build:
   artifacts:
-  - image: us-central1-docker.pkg.dev/lvp-lab-cicd-artifact-images/artifacts-cicd-test/democicd-cont:latest
+  - image: us-central1-docker.pkg.dev/lvp-lab-cicd-central/artifacts-cicd-test/democicd-cont
     docker:
       dockerfile: Dockerfile
 deploy:
