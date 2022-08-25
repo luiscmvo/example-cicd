@@ -7,4 +7,4 @@ metadata:
 description: Target for preview environment
 requireApproval: true
 gke:
-  cluster: projects/demototalplay/locations/us-central1-a/clusters/prod
+  cluster: projects/lvp-lab-workloads-1-prod/locations/us-central1-c/clusters/cluster-us-central1
