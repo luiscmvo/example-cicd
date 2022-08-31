@@ -3,7 +3,7 @@ steps:
   args: [ 'build', '-t', 'us-east4-docker.pkg.dev/lvp-lab-cicd-central/artifact-cicd-east4/democicd-cont', '.' ]
 images:  
 - 'us-east4-docker.pkg.dev/lvp-lab-cicd-central/artifact-cicd-east4/democicd-cont:latest'
-- name: gcr.io/cloud-builders/gcloud
+- name: gcr.io/cloud-builders/gcloud 
   entrypoint: "bash"
   args:
        - "-c"
