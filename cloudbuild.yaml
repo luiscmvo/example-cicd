@@ -1,7 +1,5 @@
 steps:
-- name: gcr.io/cloud-builders/gcloud 
-  entrypoint: "bash"
-  args:
-  - "-c"
-  - |
-  RESPONSE=$(curl -i 10.100.136.3:443 | grep HTTP | cut -d' ' -f2) if [ "200" != "$$RESPONSE" ]; then exit 1; fi:
+- name: 'gcr.io/cloud-builders/docker'
+  args: [ 'build', '-t', 'us-east4-docker.pkg.dev/lvp-lab-cicd-central/artifact-cicd-east4/democicd-cont', '.' ]
+images:  
+- 'us-east4-docker.pkg.dev/lvp-lab-cicd-central/artifact-cicd-east4/democicd-cont:latest'
